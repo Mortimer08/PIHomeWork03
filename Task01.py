@@ -3,3 +3,15 @@
 # Пример:
 # [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
+my_list = []
+import random
+for _ in range(5):
+    my_list.append(random.randint(1,10))
+print('Список:')
+print(my_list)
+
+sum = 0
+for i in range(1,len(my_list),2):
+    sum += my_list[i]
+
+print(f'Сумма нечётных элементов: {sum}')
